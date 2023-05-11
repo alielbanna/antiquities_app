@@ -3,7 +3,6 @@ import 'package:antiquities/domain/models/models.dart';
 import 'package:antiquities/presentation/base/baseviewmodel.dart';
 import 'package:antiquities/presentation/resources/assets_manager.dart';
 import 'package:antiquities/presentation/resources/strings_manager.dart';
-import 'package:flutter/material.dart';
 
 class OnBoardingViewModel extends BaseViewModel
     with OnBoardingViewModelInputs, OnBoardingViewModelOutputs {

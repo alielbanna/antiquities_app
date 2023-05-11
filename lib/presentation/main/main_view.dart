@@ -1,6 +1,4 @@
-import 'package:antiquities/presentation/resources/color_manager.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class MainView extends StatefulWidget {
   const MainView({Key? key}) : super(key: key);

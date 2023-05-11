@@ -1,6 +1,4 @@
-import 'package:antiquities/presentation/resources/color_manager.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class ProductDetailsView extends StatefulWidget {
   const ProductDetailsView({Key? key}) : super(key: key);

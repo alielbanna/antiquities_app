@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_final_fields
+
 import 'package:antiquities/domain/models/models.dart';
 import 'package:antiquities/presentation/onboarding/view/widgets/onboarding_page.dart';
 import 'package:antiquities/presentation/onboarding/viewmodel/onboarding_viewmodel.dart';
@@ -6,7 +8,6 @@ import 'package:antiquities/presentation/resources/routes_manager.dart';
 import 'package:antiquities/presentation/resources/strings_manager.dart';
 import 'package:antiquities/presentation/resources/values_manager.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingView extends StatefulWidget {
@@ -22,6 +23,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   // final AppPreferences _appPreferences = instance<AppPreferences>();
 
+  // ignore: unused_field
   bool _isLast = false;
 
   _bind() {

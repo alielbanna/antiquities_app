@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 const CACHE_HOME_KEY = "CACHE_HOME_KEY";
 const CACHE_HOME_INTERVAL = 60 * 1000; // 1 minute cache in millis
 const CACHE_STORE_DETAILS_KEY = "CACHE_STORE_DETAILS_KEY";

@@ -2,6 +2,7 @@ import 'package:antiquities/presentation/resources/routes_manager.dart';
 import 'package:antiquities/presentation/resources/theme_manager.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class MyApp extends StatefulWidget {
   // const MyApp({super.key}); // default constructor
 
@@ -15,6 +16,7 @@ class MyApp extends StatefulWidget {
   factory MyApp() => _instance; //factory
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyAppState createState() => _MyAppState();
 }
 
