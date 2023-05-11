@@ -1,11 +1,11 @@
-import 'package:antiquities_e_commerce/presentation/forgot_password/forgot_password_view.dart';
-import 'package:antiquities_e_commerce/presentation/login/login_view.dart';
-import 'package:antiquities_e_commerce/presentation/main/main_view.dart';
-import 'package:antiquities_e_commerce/presentation/onboarding/view/onboarding_view.dart';
-import 'package:antiquities_e_commerce/presentation/product/product_details_view.dart';
-import 'package:antiquities_e_commerce/presentation/register/register_view.dart';
-import 'package:antiquities_e_commerce/presentation/resources/strings_manager.dart';
-import 'package:antiquities_e_commerce/presentation/splash/splash_view.dart';
+import 'package:antiquities/presentation/forgot_password/forgot_password_view.dart';
+import 'package:antiquities/presentation/login/login_view.dart';
+import 'package:antiquities/presentation/main/main_view.dart';
+import 'package:antiquities/presentation/onboarding/view/onboarding_view.dart';
+import 'package:antiquities/presentation/product/product_details_view.dart';
+import 'package:antiquities/presentation/register/register_view.dart';
+import 'package:antiquities/presentation/resources/strings_manager.dart';
+import 'package:antiquities/presentation/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
 class Routes {

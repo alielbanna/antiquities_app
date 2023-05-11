@@ -1,5 +1,5 @@
-import 'package:antiquities_e_commerce/app/constants.dart';
-import 'package:antiquities_e_commerce/data/response/responses.dart';
+import 'package:antiquities/app/constants.dart';
+import 'package:antiquities/data/response/responses.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/http.dart';
 part 'app_api.g.dart';

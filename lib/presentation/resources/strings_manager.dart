@@ -1,19 +1,17 @@
 class AppStrings {
   static const noRouteFound = "noRouteFound";
-  static const onBoardingTitle1 = "Gülçehre Ibrik \n Limited Edition";
-  static const onBoardingTitle2 = "Hagia Sophia \n Deesis Mosaic Vase";
-  static const onBoardingTitle3 = "Mystical Vase \n Limited Edition";
+  static const onBoardingTitle1 = "on_boarding_title1";
+  static const onBoardingTitle2 = "on_boarding_title2";
+  static const onBoardingTitle3 = "on_boarding_title3";
 
-  static const onBoardingSubTitle1 = "HISTORY CULTURE GLASS";
-  static const onBoardingSubTitle2 = "HISTORY CULTURE GLASS";
-  static const onBoardingSubTitle3 = "HISTORY CULTURE GLASS";
-
-  static const skip = "skip";
+  static const onBoardingSubTitle1 = "on_boarding_desc1";
+  static const onBoardingSubTitle2 = "on_boarding_desc2";
+  static const onBoardingSubTitle3 = "on_boarding_desc3";
   static const username = "username_hint";
   static const password = "password_hint";
   static const usernameError = "username_error";
   static const passwordError = "password_error";
-  static const login = "SIGN IN";
+  static const login = "login_button";
   static const forgetPassword = "forgot_password_text";
   static const registerText = "register_text";
   static const loading = "loading";
@@ -27,7 +25,7 @@ class AppStrings {
   static const String mobileNumberInvalid = "mobile_number_hint_message";
   static const String passwordInvalid = "password_hint_message";
   static const String alreadyHaveAccount = "already_have_account";
-  static const register = "CREATE ACCOUNT";
+  static const register = "register";
   static const mobileNumber = "mobile_number_hint";
   static const profilePicture = "upload_profile_picture";
   static const photoGallery = "photo_from_galley";

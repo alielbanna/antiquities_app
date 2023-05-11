@@ -1,4 +1,4 @@
-package com.example.antiquities_e_commerce
+package com.example.antiquities
 
 import io.flutter.embedding.android.FlutterActivity
 

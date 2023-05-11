@@ -1,5 +1,5 @@
-import 'package:antiquities_e_commerce/presentation/resources/routes_manager.dart';
-import 'package:antiquities_e_commerce/presentation/resources/theme_manager.dart';
+import 'package:antiquities/presentation/resources/routes_manager.dart';
+import 'package:antiquities/presentation/resources/theme_manager.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {

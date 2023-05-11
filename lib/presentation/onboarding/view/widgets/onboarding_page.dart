@@ -1,5 +1,5 @@
-import 'package:antiquities_e_commerce/domain/models/models.dart';
-import 'package:antiquities_e_commerce/presentation/resources/values_manager.dart';
+import 'package:antiquities/domain/models/models.dart';
+import 'package:antiquities/presentation/resources/values_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

@@ -1,8 +1,8 @@
 import 'dart:async';
-import 'package:antiquities_e_commerce/domain/models/models.dart';
-import 'package:antiquities_e_commerce/presentation/base/baseviewmodel.dart';
-import 'package:antiquities_e_commerce/presentation/resources/assets_manager.dart';
-import 'package:antiquities_e_commerce/presentation/resources/strings_manager.dart';
+import 'package:antiquities/domain/models/models.dart';
+import 'package:antiquities/presentation/base/baseviewmodel.dart';
+import 'package:antiquities/presentation/resources/assets_manager.dart';
+import 'package:antiquities/presentation/resources/strings_manager.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingViewModel extends BaseViewModel

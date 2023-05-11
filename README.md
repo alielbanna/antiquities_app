@@ -1,4 +1,4 @@
-# antiquities_e_commerce
+# antiquities
 
 A new Flutter project.
 
