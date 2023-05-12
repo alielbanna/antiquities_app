@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:antiquities/presentation/resources/assets_manager.dart';
+import 'package:antiquities/presentation/resources/color_manager.dart';
 import 'package:antiquities/presentation/resources/constants_manager.dart';
 import 'package:antiquities/presentation/resources/routes_manager.dart';
 import 'package:flutter/material.dart';
@@ -55,15 +56,15 @@ class _SplashViewState extends State<SplashView> {
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: const [
-            Image(
+          children: [
+            const Image(
               image: AssetImage(ImageAssets.splashLogo),
               height: 200,
             ),
             Text(
               'ANTIQUITIES',
               style: TextStyle(
-                // color: ColorManager.white,
+                color: ColorManager.white,
                 fontWeight: FontWeight.bold,
               ),
             ),

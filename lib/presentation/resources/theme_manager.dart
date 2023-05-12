@@ -36,7 +36,7 @@ ThemeData getAppTheme() {
     //button theme
     buttonTheme: ButtonThemeData(
       shape: const StadiumBorder(),
-      buttonColor: ColorManager.white,
+      buttonColor: ColorManager.brown,
       splashColor: ColorManager.white,
     ),
 
@@ -47,7 +47,7 @@ ThemeData getAppTheme() {
           color: ColorManager.white,
           fontSize: AppSize.size17,
         ),
-        backgroundColor: ColorManager.white,
+        backgroundColor: ColorManager.brown,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSize.size16),
         ),
@@ -57,37 +57,37 @@ ThemeData getAppTheme() {
     //text theme
     textTheme: TextTheme(
       displayLarge: getSemiBoldStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size44,
       ),
       headlineLarge: getSemiBoldStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size30,
       ),
       headlineMedium: getRegularStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size12,
       ),
       titleMedium: getMediumStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size24,
       ),
       titleSmall: getRegularStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size16,
       ),
       bodyLarge: getRegularStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
       ),
       bodySmall: getRegularStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
       ),
       bodyMedium: getRegularStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size12,
       ),
       labelSmall: getBoldStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size12,
       ),
     ),
@@ -98,12 +98,12 @@ ThemeData getAppTheme() {
       contentPadding: const EdgeInsets.all(AppPadding.padding8),
       //hint style
       hintStyle: getRegularStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size14,
       ),
       //label style
       labelStyle: getMediumStyle(
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontSize: FontSize.size14,
       ),
       //error style
@@ -113,7 +113,7 @@ ThemeData getAppTheme() {
       //enabled border style
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(
-          color: ColorManager.white,
+          color: ColorManager.grey,
           width: AppSize.size1_5,
         ),
         borderRadius: const BorderRadius.all(
@@ -123,7 +123,7 @@ ThemeData getAppTheme() {
       //focus border style
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(
-          color: ColorManager.white,
+          color: ColorManager.brown,
           width: AppSize.size1_5,
         ),
         borderRadius: const BorderRadius.all(
@@ -143,7 +143,7 @@ ThemeData getAppTheme() {
       //focus error border style
       focusedErrorBorder: OutlineInputBorder(
         borderSide: BorderSide(
-          color: ColorManager.white,
+          color: ColorManager.brown,
           width: AppSize.size1_5,
         ),
         borderRadius: const BorderRadius.all(

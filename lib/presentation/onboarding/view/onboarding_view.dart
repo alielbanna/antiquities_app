@@ -7,6 +7,7 @@ import 'package:antiquities/presentation/resources/color_manager.dart';
 import 'package:antiquities/presentation/resources/routes_manager.dart';
 import 'package:antiquities/presentation/resources/strings_manager.dart';
 import 'package:antiquities/presentation/resources/values_manager.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -121,8 +122,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     ),
                     child: Center(
                       child: Text(
-                        AppStrings.login,
-                        style: Theme.of(context).textTheme.titleSmall,
+                        AppStrings.login.tr(),
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleSmall
+                            ?.copyWith(color: ColorManager.white),
                       ),
                     ),
                   ),
@@ -152,8 +156,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     ),
                     child: Center(
                       child: Text(
-                        AppStrings.register,
-                        style: Theme.of(context).textTheme.titleSmall,
+                        AppStrings.register.tr(),
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleSmall
+                            ?.copyWith(color: ColorManager.white),
                       ),
                     ),
                   ),
