@@ -15,8 +15,7 @@ class LoadingState extends FlowState {
   StateRendererType stateRendererType;
   String? message;
 
-  LoadingState(
-      {required this.stateRendererType, String message = AppStrings.loading});
+  LoadingState({required this.stateRendererType, String? message});
 
   @override
   String getMessage() => message ?? AppStrings.loading.tr();
@@ -157,7 +156,7 @@ extension FlowStateExtension on FlowState {
   showPopup(
       BuildContext context, StateRendererType stateRendererType, String message,
       {String title = Constants.EMPTY}) {
-    WidgetsBinding.instance?.addPostFrameCallback((_) => showDialog(
+    WidgetsBinding.instance.addPostFrameCallback((_) => showDialog(
         context: context,
         builder: (BuildContext context) => StateRenderer(
             stateRendererType: stateRendererType,

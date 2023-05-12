@@ -5,9 +5,9 @@ import 'package:antiquities/data/response/responses.dart';
 abstract class RemoteDataSource {
   Future<AuthenticationResponse> login(LoginRequest loginRequest);
 
-  // Future<AuthenticationResponse> register(RegisterRequest registerRequest);
+  Future<AuthenticationResponse> register(RegisterRequest registerRequest);
 
-  // Future<ForgotPasswordResponse> forgotPassword(String email);
+  Future<ForgotPasswordResponse> forgotPassword(String email);
 
   // Future<HomeResponse> getHomeData();
 
@@ -27,22 +27,22 @@ class RemoteDataSourceImpl implements RemoteDataSource {
     );
   }
 
-  // @override
-  // Future<ForgotPasswordResponse> forgotPassword(String email) async {
-  //   return await _appServiceClient.forgotPassword(email);
-  // }
+  @override
+  Future<ForgotPasswordResponse> forgotPassword(String email) async {
+    return await _appServiceClient.forgotPassword(email);
+  }
 
-  // @override
-  // Future<AuthenticationResponse> register(
-  //     RegisterRequest registerRequest) async {
-  //   return await _appServiceClient.register(
-  //       registerRequest.userName,
-  //       registerRequest.countryMobileCode,
-  //       registerRequest.mobileNumber,
-  //       registerRequest.email,
-  //       registerRequest.password,
-  //       "");
-  // }
+  @override
+  Future<AuthenticationResponse> register(
+      RegisterRequest registerRequest) async {
+    return await _appServiceClient.register(
+        registerRequest.userName,
+        registerRequest.countryMobileCode,
+        registerRequest.mobileNumber,
+        registerRequest.email,
+        registerRequest.password,
+        "");
+  }
 
   // @override
   // Future<HomeResponse> getHomeData() async {

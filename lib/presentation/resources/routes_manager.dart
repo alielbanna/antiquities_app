@@ -1,10 +1,10 @@
 import 'package:antiquities/app/di.dart';
-import 'package:antiquities/presentation/forgot_password/forgot_password_view.dart';
+import 'package:antiquities/presentation/forgot_password/view/forgot_password_view.dart';
 import 'package:antiquities/presentation/login/view/login_view.dart';
 import 'package:antiquities/presentation/main/main_view.dart';
 import 'package:antiquities/presentation/onboarding/view/onboarding_view.dart';
 import 'package:antiquities/presentation/product/product_details_view.dart';
-import 'package:antiquities/presentation/register/register_view.dart';
+import 'package:antiquities/presentation/register/view/register_view.dart';
 import 'package:antiquities/presentation/resources/strings_manager.dart';
 import 'package:antiquities/presentation/splash/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -38,13 +38,13 @@ class RouteGenerator {
         );
 
       case Routes.registerRoute:
-        // initRegisterModule();
+        initRegisterModule();
         return MaterialPageRoute(
           builder: (_) => const RegisterView(),
         );
 
       case Routes.forgotPasswordRoute:
-        // initForgotPasswordModule();
+        initForgotPasswordModule();
         return MaterialPageRoute(
           builder: (_) => const ForgotPasswordView(),
         );

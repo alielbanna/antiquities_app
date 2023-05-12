@@ -23,17 +23,18 @@ enum StateRendererType {
 
 // ignore: must_be_immutable
 class StateRenderer extends StatelessWidget {
-  StateRendererType stateRendererType;
-  String message;
-  String title;
-  Function retryActionFunction;
+  final StateRendererType stateRendererType;
+  final String? message;
+  final String? title;
+  final Function? retryActionFunction;
 
-  StateRenderer(
-      {super.key,
+  const StateRenderer(
+      {Key? key,
       required this.stateRendererType,
       this.message = AppStrings.loading,
       this.title = "",
-      required this.retryActionFunction});
+      required this.retryActionFunction})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -48,28 +49,28 @@ class StateRenderer extends StatelessWidget {
       case StateRendererType.popupErrorState:
         return _getPopUpDialog(context, [
           _getAnimatedImage(JsonAssets.error),
-          _getMessage(message),
+          _getMessage(message!),
           _getRetryButton(AppStrings.ok.tr(), context)
         ]);
       case StateRendererType.fullScreenLoadingState:
         return _getItemsColumn(
-            [_getAnimatedImage(JsonAssets.loading), _getMessage(message)]);
+            [_getAnimatedImage(JsonAssets.loading), _getMessage(message!)]);
       case StateRendererType.fullScreenErrorState:
         return _getItemsColumn([
           _getAnimatedImage(JsonAssets.error),
-          _getMessage(message),
+          _getMessage(message!),
           _getRetryButton(AppStrings.retryAgain.tr(), context)
         ]);
       case StateRendererType.fullScreenEmptyState:
         return _getItemsColumn(
-            [_getAnimatedImage(JsonAssets.empty), _getMessage(message)]);
+            [_getAnimatedImage(JsonAssets.empty), _getMessage(message!)]);
       case StateRendererType.contentState:
         return Container();
       case StateRendererType.popupSuccess:
         return _getPopUpDialog(context, [
           _getAnimatedImage(JsonAssets.success),
-          _getMessage(title),
-          _getMessage(message),
+          _getMessage(title!),
+          _getMessage(message!),
           _getRetryButton(AppStrings.ok.tr(), context)
         ]);
       default:
@@ -89,7 +90,10 @@ class StateRenderer extends StatelessWidget {
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.circular(AppSize.size14),
             boxShadow: const [BoxShadow(color: Colors.black26)]),
-        child: _getDialogContent(context, children),
+        child: Padding(
+          padding: const EdgeInsets.only(top: AppPadding.padding10),
+          child: _getDialogContent(context, children),
+        ),
       ),
     );
   }
@@ -143,7 +147,7 @@ class StateRenderer extends StatelessWidget {
                   if (stateRendererType ==
                       StateRendererType.fullScreenErrorState) {
                     // call retry function
-                    retryActionFunction.call();
+                    retryActionFunction?.call();
                   } else {
                     // popup error state
                     Navigator.of(context).pop();

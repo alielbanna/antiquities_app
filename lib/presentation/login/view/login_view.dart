@@ -2,7 +2,6 @@ import 'package:antiquities/app/app_preferences.dart';
 import 'package:antiquities/app/di.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer_impl.dart';
 import 'package:antiquities/presentation/login/viewmodel/login_viewmodel.dart';
-import 'package:antiquities/presentation/resources/assets_manager.dart';
 import 'package:antiquities/presentation/resources/color_manager.dart';
 import 'package:antiquities/presentation/resources/font_manager.dart';
 import 'package:antiquities/presentation/resources/routes_manager.dart';
@@ -38,7 +37,7 @@ class _LoginViewState extends State<LoginView> {
     _viewModel.isUserLoggedInSuccessfullyStreamController.stream
         .listen((isLoggedIn) {
       if (isLoggedIn) {
-        SchedulerBinding.instance?.addPostFrameCallback((_) {
+        SchedulerBinding.instance.addPostFrameCallback((_) {
           _appPreferences.setUserLoggedIn();
           Navigator.of(context).pushReplacementNamed(Routes.mainRoute);
         });
