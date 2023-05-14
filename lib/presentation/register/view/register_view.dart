@@ -1,7 +1,7 @@
 import 'dart:io';
-import 'package:antiquities/app/app_preferences.dart';
-import 'package:antiquities/app/constants.dart';
-import 'package:antiquities/app/di.dart';
+import 'package:antiquities/core/app_preferences.dart';
+import 'package:antiquities/core/constants.dart';
+import 'package:antiquities/core/di.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer_impl.dart';
 import 'package:antiquities/presentation/register/viewmodel/register_viewmodel.dart';
 import 'package:antiquities/presentation/resources/assets_manager.dart';

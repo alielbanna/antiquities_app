@@ -1,5 +1,5 @@
-import 'package:antiquities/app/app_preferences.dart';
-import 'package:antiquities/app/di.dart';
+import 'package:antiquities/core/app_preferences.dart';
+import 'package:antiquities/core/di.dart';
 import 'package:antiquities/presentation/resources/routes_manager.dart';
 import 'package:antiquities/presentation/resources/theme_manager.dart';
 import 'package:easy_localization/easy_localization.dart';

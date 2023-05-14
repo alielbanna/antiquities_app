@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:antiquities/app/di.dart';
+import 'package:antiquities/core/di.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer_impl.dart';
 import 'package:antiquities/presentation/forgot_password/viewmodel/forgot_password_viewmodel.dart';
 import 'package:antiquities/presentation/resources/assets_manager.dart';

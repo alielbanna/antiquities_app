@@ -1,5 +1,5 @@
-import 'package:antiquities/app/app_preferences.dart';
-import 'package:antiquities/app/constants.dart';
+import 'package:antiquities/core/app_preferences.dart';
+import 'package:antiquities/core/constants.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';

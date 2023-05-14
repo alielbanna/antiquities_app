@@ -1,5 +1,5 @@
-import 'package:antiquities/app/extensions.dart';
-import 'package:antiquities/app/constants.dart';
+import 'package:antiquities/core/extensions.dart';
+import 'package:antiquities/core/constants.dart';
 import 'package:antiquities/data/response/responses.dart';
 import 'package:antiquities/domain/models/models.dart';
 

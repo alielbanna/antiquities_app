@@ -1,4 +1,4 @@
-import 'package:antiquities/app/di.dart';
+import 'package:antiquities/core/di.dart';
 import 'package:antiquities/presentation/forgot_password/view/forgot_password_view.dart';
 import 'package:antiquities/presentation/login/view/login_view.dart';
 import 'package:antiquities/presentation/main/main_view.dart';

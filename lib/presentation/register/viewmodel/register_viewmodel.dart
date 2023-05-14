@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:antiquities/app/functions.dart';
+import 'package:antiquities/core/functions.dart';
 import 'package:antiquities/domain/usecase/register_usecase.dart';
 import 'package:antiquities/presentation/common/freezed_data_classes.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer.dart';

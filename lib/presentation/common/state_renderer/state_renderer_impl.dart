@@ -1,4 +1,4 @@
-import 'package:antiquities/app/constants.dart';
+import 'package:antiquities/core/constants.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer.dart';
 import 'package:antiquities/presentation/resources/strings_manager.dart';
 import 'package:easy_localization/easy_localization.dart';

@@ -1,4 +1,4 @@
-import 'package:antiquities/app/di.dart';
+import 'package:antiquities/core/di.dart';
 import 'package:antiquities/domain/models/models.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer_impl.dart';
 import 'package:antiquities/presentation/main/pages/home/viewmodel/home_viewmodel.dart';

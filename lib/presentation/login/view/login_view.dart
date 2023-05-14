@@ -1,5 +1,5 @@
-import 'package:antiquities/app/app_preferences.dart';
-import 'package:antiquities/app/di.dart';
+import 'package:antiquities/core/app_preferences.dart';
+import 'package:antiquities/core/di.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer_impl.dart';
 import 'package:antiquities/presentation/login/viewmodel/login_viewmodel.dart';
 import 'package:antiquities/presentation/resources/color_manager.dart';

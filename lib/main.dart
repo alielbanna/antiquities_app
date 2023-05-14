@@ -1,5 +1,5 @@
-import 'package:antiquities/app/app.dart';
-import 'package:antiquities/app/di.dart';
+import 'package:antiquities/core/app.dart';
+import 'package:antiquities/core/di.dart';
 import 'package:antiquities/presentation/resources/language_manager.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';

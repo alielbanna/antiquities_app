@@ -1,4 +1,4 @@
-import 'package:antiquities/app/constants.dart';
+import 'package:antiquities/core/constants.dart';
 import 'package:antiquities/data/response/responses.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/http.dart';

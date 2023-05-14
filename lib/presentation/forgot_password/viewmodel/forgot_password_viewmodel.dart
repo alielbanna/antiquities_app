@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:antiquities/app/functions.dart';
+import 'package:antiquities/core/functions.dart';
 import 'package:antiquities/presentation/base/baseviewmodel.dart';
 import 'package:antiquities/domain/usecase/forgot_password_usecase.dart';
 import 'package:antiquities/presentation/common/state_renderer/state_renderer.dart';

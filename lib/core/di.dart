@@ -1,4 +1,4 @@
-import 'package:antiquities/app/app_preferences.dart';
+import 'package:antiquities/core/app_preferences.dart';
 import 'package:antiquities/data/data_source/local_data_source.dart';
 import 'package:antiquities/data/data_source/remote_data_source.dart';
 import 'package:antiquities/data/network/app_api.dart';
