@@ -38,77 +38,78 @@ extension ForgotPasswordResponseMapper on ForgotPasswordResponse? {
   }
 }
 
-// extension ServiceResponseMapper on ServiceResponse? {
-//   Service toDomain() {
-//     return Service(
-//       this?.id.orZero() ?? Constants.ZERO,
-//       this?.title.orEmpty() ?? Constants.empty,
-//       this?.image.orEmpty() ?? Constants.empty,
-//     );
-//   }
-// }
+extension CategoriesResponseMapper on CategoryResponse? {
+  Category toDomain() {
+    return Category(
+      this?.id.orZero() ?? Constants.ZERO,
+      this?.title.orEmpty() ?? Constants.empty,
+      this?.image.orEmpty() ?? Constants.empty,
+    );
+  }
+}
 
-// extension StoreResponseMapper on StoreResponse? {
-//   Store toDomain() {
-//     return Store(
-//       this?.id.orZero() ?? Constants.ZERO,
-//       this?.title.orEmpty() ?? Constants.empty,
-//       this?.image.orEmpty() ?? Constants.empty,
-//     );
-//   }
-// }
+extension ProductResponseMapper on ProductResponse? {
+  Product toDomain() {
+    return Product(
+      this?.id.orZero() ?? Constants.ZERO,
+      this?.title.orEmpty() ?? Constants.empty,
+      this?.price.orEmpty() ?? Constants.empty,
+      this?.image.orEmpty() ?? Constants.empty,
+    );
+  }
+}
 
-// extension BannersResponseMapper on BannersResponse? {
-//   BannerAd toDomain() {
-//     return BannerAd(
-//       this?.id.orZero() ?? Constants.ZERO,
-//       this?.title.orEmpty() ?? Constants.empty,
-//       this?.image.orEmpty() ?? Constants.empty,
-//       this?.link.orEmpty() ?? Constants.empty,
-//     );
-//   }
-// }
+extension BannersResponseMapper on BannersResponse? {
+  BannerAd toDomain() {
+    return BannerAd(
+      this?.id.orZero() ?? Constants.ZERO,
+      this?.title.orEmpty() ?? Constants.empty,
+      this?.image.orEmpty() ?? Constants.empty,
+      this?.link.orEmpty() ?? Constants.empty,
+    );
+  }
+}
 
-// extension HomeResponseMapper on HomeResponse? {
-//   HomeObject toDomain() {
-//     List<Service> services = (this
-//                 ?.data
-//                 ?.services
-//                 ?.map((serviceResponse) => serviceResponse.toDomain()) ??
-//             const Iterable.empty())
-//         .cast<Service>()
-//         .toList();
+extension HomeResponseMapper on HomeResponse? {
+  HomeObject toDomain() {
+    List<Category> categories = (this
+                ?.data
+                ?.categories
+                ?.map((serviceResponse) => serviceResponse.toDomain()) ??
+            const Iterable.empty())
+        .cast<Category>()
+        .toList();
 
-//     List<BannerAd> banners = (this
-//                 ?.data
-//                 ?.banners
-//                 ?.map((bannersResponse) => bannersResponse.toDomain()) ??
-//             const Iterable.empty())
-//         .cast<BannerAd>()
-//         .toList();
+    List<BannerAd> banners = (this
+                ?.data
+                ?.banners
+                ?.map((bannersResponse) => bannersResponse.toDomain()) ??
+            const Iterable.empty())
+        .cast<BannerAd>()
+        .toList();
 
-//     List<Store> stores = (this
-//                 ?.data
-//                 ?.stores
-//                 ?.map((storesResponse) => storesResponse.toDomain()) ??
-//             const Iterable.empty())
-//         .cast<Store>()
-//         .toList();
+    List<Product> productes = (this
+                ?.data
+                ?.products
+                ?.map((storesResponse) => storesResponse.toDomain()) ??
+            const Iterable.empty())
+        .cast<Product>()
+        .toList();
 
-//     var data = HomeData(services, banners, stores);
-//     return HomeObject(data);
-//   }
-// }
+    var data = HomeData(categories, banners, productes);
+    return HomeObject(data);
+  }
+}
 
-// extension StoreDetailsResponseMapper on StoreDetailsResponse? {
-//   StoreDetails toDomain() {
-//     return StoreDetails(
-//       this?.id?.orZero() ?? Constants.ZERO,
-//       this?.title?.orEmpty() ?? Constants.empty,
-//       this?.image?.orEmpty() ?? Constants.empty,
-//       this?.details?.orEmpty() ?? Constants.empty,
-//       this?.services?.orEmpty() ?? Constants.empty,
-//       this?.about?.orEmpty() ?? Constants.empty,
-//     );
-//   }
-// }
+extension StoreDetailsResponseMapper on StoreDetailsResponse? {
+  StoreDetails toDomain() {
+    return StoreDetails(
+      this?.id?.orZero() ?? Constants.ZERO,
+      this?.title?.orEmpty() ?? Constants.empty,
+      this?.image?.orEmpty() ?? Constants.empty,
+      this?.details?.orEmpty() ?? Constants.empty,
+      this?.services?.orEmpty() ?? Constants.empty,
+      this?.about?.orEmpty() ?? Constants.empty,
+    );
+  }
+}

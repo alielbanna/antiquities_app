@@ -50,20 +50,21 @@ class Authentication {
 
 //HOME MODELS
 
-class Service {
+class Category {
   int id;
   String title;
   String image;
 
-  Service(this.id, this.title, this.image);
+  Category(this.id, this.title, this.image);
 }
 
-class Store {
+class Product {
   int id;
   String title;
+  String price;
   String image;
 
-  Store(this.id, this.title, this.image);
+  Product(this.id, this.title, this.price, this.image);
 }
 
 class BannerAd {
@@ -76,11 +77,11 @@ class BannerAd {
 }
 
 class HomeData {
-  List<Service> services;
+  List<Category> categories;
   List<BannerAd> banners;
-  List<Store> stores;
+  List<Product> products;
 
-  HomeData(this.services, this.banners, this.stores);
+  HomeData(this.categories, this.banners, this.products);
 }
 
 class HomeObject {

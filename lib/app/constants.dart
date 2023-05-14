@@ -1,5 +1,3 @@
-// ignore_for_file: constant_identifier_names
-
 class Constants {
   static const String baseUrl = 'https://antiquities.mocklab.io/';
   static const String EMPTY = '';

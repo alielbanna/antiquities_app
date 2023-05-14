@@ -9,9 +9,9 @@ abstract class RemoteDataSource {
 
   Future<ForgotPasswordResponse> forgotPassword(String email);
 
-  // Future<HomeResponse> getHomeData();
+  Future<HomeResponse> getHomeData();
 
-  // Future<StoreDetailsResponse> getStoreDetails();
+  Future<StoreDetailsResponse> getStoreDetails();
 }
 
 class RemoteDataSourceImpl implements RemoteDataSource {
@@ -44,13 +44,13 @@ class RemoteDataSourceImpl implements RemoteDataSource {
         "");
   }
 
-  // @override
-  // Future<HomeResponse> getHomeData() async {
-  //   return await _appServiceClient.getHomeData();
-  // }
+  @override
+  Future<HomeResponse> getHomeData() async {
+    return await _appServiceClient.getHomeData();
+  }
 
-  // @override
-  // Future<StoreDetailsResponse> getStoreDetails() async {
-  //   return await _appServiceClient.getStoreDetails();
-  // }
+  @override
+  Future<StoreDetailsResponse> getStoreDetails() async {
+    return await _appServiceClient.getStoreDetails();
+  }
 }

@@ -81,3 +81,109 @@ Map<String, dynamic> _$ForgotPasswordResponseToJson(
       'message': instance.message,
       'support': instance.support,
     };
+
+CategoryResponse _$CategoryResponseFromJson(Map<String, dynamic> json) =>
+    CategoryResponse(
+      json['id'] as int?,
+      json['title'] as String?,
+      json['image'] as String?,
+    );
+
+Map<String, dynamic> _$CategoryResponseToJson(CategoryResponse instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'image': instance.image,
+    };
+
+BannersResponse _$BannersResponseFromJson(Map<String, dynamic> json) =>
+    BannersResponse(
+      json['id'] as int?,
+      json['title'] as String?,
+      json['image'] as String?,
+      json['link'] as String?,
+    );
+
+Map<String, dynamic> _$BannersResponseToJson(BannersResponse instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'image': instance.image,
+      'link': instance.link,
+    };
+
+ProductResponse _$ProductResponseFromJson(Map<String, dynamic> json) =>
+    ProductResponse(
+      json['id'] as int?,
+      json['title'] as String?,
+      json['image'] as String?,
+    )..price = json['price'] as String?;
+
+Map<String, dynamic> _$ProductResponseToJson(ProductResponse instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'price': instance.price,
+      'image': instance.image,
+    };
+
+HomeDataResponse _$HomeDataResponseFromJson(Map<String, dynamic> json) =>
+    HomeDataResponse(
+      (json['services'] as List<dynamic>?)
+          ?.map((e) => CategoryResponse.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      (json['banners'] as List<dynamic>?)
+          ?.map((e) => BannersResponse.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      (json['stores'] as List<dynamic>?)
+          ?.map((e) => ProductResponse.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$HomeDataResponseToJson(HomeDataResponse instance) =>
+    <String, dynamic>{
+      'services': instance.categories,
+      'banners': instance.banners,
+      'stores': instance.products,
+    };
+
+HomeResponse _$HomeResponseFromJson(Map<String, dynamic> json) => HomeResponse(
+      json['data'] == null
+          ? null
+          : HomeDataResponse.fromJson(json['data'] as Map<String, dynamic>),
+    )
+      ..status = json['status'] as int?
+      ..message = json['message'] as String?;
+
+Map<String, dynamic> _$HomeResponseToJson(HomeResponse instance) =>
+    <String, dynamic>{
+      'status': instance.status,
+      'message': instance.message,
+      'data': instance.data,
+    };
+
+StoreDetailsResponse _$StoreDetailsResponseFromJson(
+        Map<String, dynamic> json) =>
+    StoreDetailsResponse(
+      json['id'] as int?,
+      json['title'] as String?,
+      json['image'] as String?,
+      json['details'] as String?,
+      json['services'] as String?,
+      json['about'] as String?,
+    )
+      ..status = json['status'] as int?
+      ..message = json['message'] as String?;
+
+Map<String, dynamic> _$StoreDetailsResponseToJson(
+        StoreDetailsResponse instance) =>
+    <String, dynamic>{
+      'status': instance.status,
+      'message': instance.message,
+      'id': instance.id,
+      'title': instance.title,
+      'image': instance.image,
+      'details': instance.details,
+      'services': instance.services,
+      'about': instance.about,
+    };

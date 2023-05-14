@@ -49,12 +49,12 @@ class RouteGenerator {
           builder: (_) => const ForgotPasswordView(),
         );
       case Routes.mainRoute:
-        // initHomeModule();
+        initHomeModule();
         return MaterialPageRoute(
           builder: (_) => const MainView(),
         );
       case Routes.productDetailsRoute:
-        // initStoreDetailsModule();
+        initStoreDetailsModule();
         return MaterialPageRoute(
           builder: (_) => const ProductDetailsView(),
         );

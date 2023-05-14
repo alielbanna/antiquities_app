@@ -1,5 +1,3 @@
-// ignore_for_file: constant_identifier_names
-
 import 'package:antiquities/app/app_preferences.dart';
 import 'package:antiquities/app/constants.dart';
 import 'package:dio/dio.dart';

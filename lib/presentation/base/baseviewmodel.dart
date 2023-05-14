@@ -25,9 +25,11 @@ abstract class BaseViewModelInputs {
 
   void dispose(); // will be called when view model dies
 
-  // Sink get inputState;
+  Sink get inputState;
 }
 
 abstract class BaseViewModelOutputs {
-  // Stream<FlowState> get outputState;
+  // will be implemented later
+
+  Stream<FlowState> get outputState;
 }

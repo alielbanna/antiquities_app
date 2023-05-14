@@ -21,7 +21,7 @@ class LoginViewModel extends BaseViewModel
 
   LoginViewModel(this._loginUseCase);
 
-  //-------------------------------inputs ------------------------------------------------------------------------
+  //inputs ------------------------------------------------------------------------
 
   @override
   void dispose() {
@@ -66,10 +66,12 @@ class LoginViewModel extends BaseViewModel
   login() async {
     inputState.add(
         LoadingState(stateRendererType: StateRendererType.popupLoadingState));
-    (await _loginUseCase.execute(LoginUseCaseInput(
-      loginObject.userName,
-      loginObject.password,
-    )))
+    (await _loginUseCase.execute(
+      LoginUseCaseInput(
+        loginObject.userName,
+        loginObject.password,
+      ),
+    ))
         .fold(
             (fail) => {
                   // left ---> failure
@@ -84,7 +86,7 @@ class LoginViewModel extends BaseViewModel
     });
   }
 
-  //-------------------------------outputs ------------------------------------------------------------------------
+  //outputs ------------------------------------------------------------------------
 
   @override
   Stream<bool> get outputIsPasswordValid => _passwordStreamController.stream

@@ -318,7 +318,7 @@ class _RegisterViewState extends State<RegisterView> {
                   onPressed: () {
                     Navigator.pushNamed(
                       context,
-                      Routes.loginRoute,
+                      Routes.mainRoute,
                     );
                   },
                   child: Text(
@@ -423,8 +423,6 @@ class _RegisterViewState extends State<RegisterView> {
 // Container(
 //     decoration: BoxDecoration(
 //       gradient: LinearGradient(
-//         begin: Alignment(-0.084, 1.108),
-//         end: Alignment(-1.0, -1.736),
 //         colors: [
 //           const Color(0xff272833),
 //           const Color(0xff2e2b32),
@@ -438,19 +436,8 @@ class _RegisterViewState extends State<RegisterView> {
 //           const Color(0xffb0611a),
 //           const Color(0xffb86518)
 //         ],
-//         stops: [
-//           0.0,
-//           0.05,
-//           0.155,
-//           0.49,
-//           0.602,
-//           0.728,
-//           0.786,
-//           0.824,
-//           0.895,
-//           0.941,
-//           1.0
-//         ],
+//         
+
 //       ),
 //       borderRadius: BorderRadius.circular(4.0),
 //     ),
